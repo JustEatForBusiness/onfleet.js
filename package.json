@@ -2,7 +2,7 @@
   "name": "onfleet",
   "version": "1.0.0",
   "description": "Node client for Onfleet",
-  "main": "index.js",
+  "main": "lib/onfleet.js",
   "scripts": {
     "test": "mocha"
   },
@@ -13,7 +13,7 @@
   "keywords": [
     "onfleet"
   ],
-  "author": "City Pantry",
+  "author": "David Stefan <david@citypantry.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/stefda/onfleet.js/issues"
