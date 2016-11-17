@@ -8,7 +8,7 @@ npm install https://github.com/CityPantry/onfleet.js/tarball/v1.0.2
 
 ## Example usage
 
-```
+```javascript
 var onfleet = require('onfleet').getClient('<your api key>');
 
 onfleet.getWorkers
