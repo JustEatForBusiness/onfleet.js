@@ -1,0 +1,22 @@
+{
+  "name": "onfleet",
+  "version": "1.0.0",
+  "description": "Node client for Onfleet",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stefda/onfleet.js.git"
+  },
+  "keywords": [
+    "onfleet"
+  ],
+  "author": "City Pantry",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stefda/onfleet.js/issues"
+  },
+  "homepage": "https://github.com/stefda/onfleet.js#readme"
+}
