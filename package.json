@@ -1,6 +1,6 @@
 {
   "name": "onfleet",
-  "version": "3.0.0",
+  "version": "2.0.0",
   "description": "Node client for Onfleet",
   "main": "lib/onfleet.js",
   "scripts": {
