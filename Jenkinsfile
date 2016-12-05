@@ -1,6 +1,6 @@
 node {
   stage 'Test'
   checkout scm
-  sh 'npm install'
-  sh 'npm test'
+  sh 'docker build -t citypantry/onfleet.js .'
+  sh 'docker run --rm citypantry/onfleet.js'
 }
