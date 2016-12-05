@@ -1,3 +1,5 @@
+'use strict';
+
 const sinon = require('sinon');
 const expect = require('chai').expect;
 const Client = require('../lib/onfleet/client');

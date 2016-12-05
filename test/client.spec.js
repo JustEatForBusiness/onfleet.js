@@ -1,3 +1,5 @@
+'use strict';
+
 const describe = require("mocha").describe;
 const nock = require("nock");
 const Client = require('../lib/onfleet/client');
