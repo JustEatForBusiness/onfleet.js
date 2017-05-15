@@ -77,6 +77,10 @@ class Tasks {
             return isToday && (includeFailed || !failed);
         }));
     }
+
+    delete(id) {
+        return this.client.delete(`/tasks/${id}`);
+    }
 }
 
 module.exports = Tasks;
