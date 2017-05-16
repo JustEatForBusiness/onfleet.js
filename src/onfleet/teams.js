@@ -21,7 +21,7 @@ class Teams {
     }
 
     /**
-     * Gets a single worker details
+     * Get a single team.
      *
      * http://docs.onfleet.com/docs/teams#get-single-team
      *
@@ -49,4 +49,4 @@ class Teams {
     }
 }
 
-module.exports = Workers;
+module.exports = Teams;
