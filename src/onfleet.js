@@ -2,28 +2,34 @@
 
 const Client = require('./onfleet/client.js');
 const Tasks = require('./onfleet/tasks.js');
-const Workers = require('./onfleet/workers.js');
+const Teams = require('./onfleet/teams.js');
 const Webhooks = require('./onfleet/webhooks.js');
+const Workers = require('./onfleet/workers.js');
 
 class Onfleet {
 
     constructor(apiKey, apiBase) {
         this.client = new Client(apiKey, apiBase);
         this._tasks = new Tasks(this.client);
-        this._workers = new Workers(this.client);
+        this._teams = new Teams(this.client);
         this._webhooks = new Webhooks(this.client);
+        this._workers = new Workers(this.client);
     }
 
     get tasks() {
         return this._tasks;
     }
 
-    get workers() {
-        return this._workers;
+    get teams() {
+        return this._teams;
     }
 
     get webhooks() {
         return this._webhooks;
+    }
+
+    get workers() {
+        return this._workers;
     }
 
     static get Triggers() {
