@@ -37,4 +37,4 @@ class Destinations {
     }
 }
 
-module.exports = Workers;
+module.exports = Destinations;
