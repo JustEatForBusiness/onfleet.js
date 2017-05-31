@@ -9,6 +9,25 @@ class Tasks {
     }
 
     /**
+     * Creates a task
+     *
+     * http://docs.onfleet.com/docs/tasks#create-task
+     *
+     */
+    create(destination, recipients, container = null, auto_assign = false) {
+        let post_data = {
+            'destination': destination,
+            'recipients': recipients
+        };
+        if (container) {
+            post_data.container = container;
+        } else if (auto_assign) {
+            post_data.autoAssign = true;
+        }
+        return this.client.post('/tasks', post_data);
+    }
+
+    /**
      * Gets a single task for the given id
      *
      * http://docs.onfleet.com/docs/tasks#get-single-task

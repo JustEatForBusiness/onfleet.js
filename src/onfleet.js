@@ -5,15 +5,21 @@ const Tasks = require('./onfleet/tasks.js');
 const Teams = require('./onfleet/teams.js');
 const Webhooks = require('./onfleet/webhooks.js');
 const Workers = require('./onfleet/workers.js');
+const Destinations = require('./onfleet/destinations.js');
 
 class Onfleet {
 
     constructor(apiKey, apiBase) {
         this.client = new Client(apiKey, apiBase);
+        this._destinations = new Destinations(this.client);
         this._tasks = new Tasks(this.client);
         this._teams = new Teams(this.client);
         this._webhooks = new Webhooks(this.client);
         this._workers = new Workers(this.client);
+    }
+
+    get destinations() {
+        return this._destinations;
     }
 
     get tasks() {
